@@ -1,0 +1,40 @@
+<!-- BEGIN PAGE BREADCRUMB -->
+<ul class="page-breadcrumb breadcrumb">
+    <li>
+        <a href="#">Home</a>
+        <i class="fa fa-circle"></i>
+    </li>
+    <li class="active"> User Groups </li>
+</ul>
+<!-- END PAGE BREADCRUMB -->
+<!-- BEGIN MAIN CONTENT -->
+<div ng-controller="UserGroupController">
+
+    <div class="row">
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Paid</th>
+                <th>Admin</th>
+                <th>Users</th>
+                <th>Child Profiles</th>
+            </tr>
+            <tr ng-repeat="group in groups">
+                <td>
+                    {{ group.groupName }}
+                </td>
+                <td>
+                    {{ group.paid }}
+                </td>
+                <td>
+                    {{ group.admin }}
+                </td>
+                <td>
+                    {{ group.childProfiles }}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- END MAIN CONTENT -->
+<!-- BEGIN MAIN JS & CSS -->
